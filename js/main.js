@@ -4,7 +4,7 @@
 
 // Trade data
 const TRADES = [
-  { id: 0, icon: '🌾', label: 'Start', value: '¥0', desc: 'プロジェクト始動', date: '2025-06-13', status: 'current' },
+  { id: 0, icon: '🥤', label: 'Start', value: '¥5', desc: '1本のストローからスタート', date: '2026-06-22', status: 'current' },
   { id: 1, icon: '💻', label: 'Trade 1', value: '—', desc: '最初の取引', date: null, status: 'pending' },
   { id: 2, icon: '🎨', label: 'Trade 2', value: '—', desc: '', date: null, status: 'pending' },
   { id: 3, icon: '📱', label: 'Trade 3', value: '—', desc: '', date: null, status: 'pending' },
@@ -44,12 +44,10 @@ function animateStats() {
   const currentValue = document.getElementById('currentValue');
 
   if (tradeCount) {
-    let count = 0;
-    const interval = setInterval(() => {
-      count++;
-      tradeCount.textContent = count;
-      if (count >= 1) clearInterval(interval);
-    }, 500);
+    tradeCount.textContent = '0';
+  }
+  if (currentValue) {
+    currentValue.textContent = '¥5';
   }
 }
 
