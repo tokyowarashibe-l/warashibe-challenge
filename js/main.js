@@ -39,15 +39,18 @@ function renderTradeTracker() {
 }
 
 function animateStats() {
-  // Simple counter animation for stats
   const tradeCount = document.getElementById('tradeCount');
   const currentValue = document.getElementById('currentValue');
+  const dayCount = document.getElementById('dayCount');
 
   if (tradeCount) {
     tradeCount.textContent = '0';
   }
   if (currentValue) {
     currentValue.textContent = '¥5';
+  }
+  if (dayCount) {
+    dayCount.textContent = '14';
   }
 }
 
